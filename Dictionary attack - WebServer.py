@@ -10,9 +10,9 @@ data = file.readlines()
 
 for line in data:
     word = line.strip("\n")
-    strreq = "{0}/{1}".format(host,word)
+    strReq = "{0}/{1}".format(host,word)
     try:
-        req = urllib2.urlopen(strreq)
+        req = urllib.request.urlopen(strReq)
         if req.code == 200:
             print("[+] {0}/{1} is Found (200)".format(host,word))
     except:
