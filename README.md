@@ -4,3 +4,6 @@ python 3
 urllib.request
 
 sys
+
+
+* use cmd or terminal 
